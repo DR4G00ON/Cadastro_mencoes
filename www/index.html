@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Assets/Css/index.css">
+</head>
+<body>
+    <fieldset>
+        <legend>Cadastro de menções</legend>
+        <div class="container">
+            <div class="fields-inputs">            
+                <div class="field-name field">
+                    <label for="i-name">Digite seu nome</label> 
+                    <input type="text" class="input-name" name="i-name">
+               </div>
+                <div class="field-email field">
+                    <label for="i-name">Digite seu e-mail</label> 
+                    <input type="text" class="input-email" name="i-name">
+                </div>
+                <div class="field-password field">
+                    <label for="i-password">Digite sua senha</label>
+                    <input type="password" class="input-password" name="i-password">
+                </div>
+            </div>
+            <div class="area-class">
+                <label for="s-class">Qual é seu curso</label>
+                <select name="s-class" class="s-class">
+                    <option>JOD</option>
+                    <option>MAD</option>
+                    <option>DES</option>
+                    <option selected>NULL</option>
+                </select>
+            </div>
+            <div class="area-subject">
+                <label for="s-subject">Escolhe a máteria</label>
+                <select name="s-subject" class="s-subject">
+                    <option>Língua Portugesa</option>
+                    <option>Química</option>
+                    <option>Geografia</option>
+                    <option>Artes</option>
+                    <option>Matemática</option>
+                    <option>Filosofia</option>
+                    <option>Inglês</option>
+                    <option>Sociologia</option>
+                    <option selected>NULL</option>    
+                </select>            
+            </div>
+
+            <div class="area-mention">
+                <label for="s-mention">Menção</label>
+                <select class="s-mention">
+                    <option>MB</option>
+                    <option>B</option>
+                    <option>R</option>
+                    <option>I</option>
+                    <option selected>N/A</option>
+                </select>
+            </div>
+            <div class="area-btn-submit">
+                <button name="btn-submit" class="btn" type="submit">Cadastrar</button>
+            </div>
+            <div id="saida">
+                <p id="nomealuno"></p>
+                <p id="exibirdiciplina"></p>
+                <p id="exibirmencao"></p>
+            </div>
+
+        </div>
+
+    </fieldset>
+
+    <script src="./Assets/Js/index.js"></script>
+</body>
+</html>
